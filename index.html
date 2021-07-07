@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IF_19</title>
+
+	<link href="webglbook.css" rel="stylesheet" /> 
+	<link href="integration-text.css" rel="stylesheet" /> 
+	<script src="Three.js"></script>
+	<script src="jquery-1.6.4.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+	<script src="RequestAnimationFrame.js"></script>
+	<script src="sim.js"></script>
+	<script src="integration-text.js"></script>
+
+	<script src="optimer_bold.typeface.js"></script>
+	<script src="droid_sans_bold.typeface.js"></script>
+
+	<script>
+
+	var renderer = null;
+	var scene = null;
+	var camera = null;
+	var mesh = null;
+	var theApp = null;
+	
+	$(document).ready(
+		function() {
+			var container = document.getElementById("container");
+			theApp = new TextApp();
+			theApp.init({ container: container });
+			theApp.run();
+		}
+	);	
+	</script>
+
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
